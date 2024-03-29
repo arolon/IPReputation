@@ -47,7 +47,7 @@ $form.addEventListener('submit', async (event) => {
           <p><strong>Languages:</strong> <span id="languages">${ipInfo.languages[0].name}</span></p>
         </div>
       </div>
-      <p></p>
+      </br>
       <article>
       <header>Message:</header>
       ${ipInfo.message}
@@ -109,8 +109,7 @@ $form.addEventListener('submit', async (event) => {
         </table>
         <div id="map"></div>
       </div>
-    
-
+      </br>
       <details>
         <summary role="button">Full response</summary>
         <p><pre>${JSON.stringify(ipInfo, null, 2)}</pre></p>
