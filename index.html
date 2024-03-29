@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
+/>
+
+<main class="container">
+  <form id="form">
+    <label for="">
+      IP del usuario
+      <input 
+      required
+      id="input"
+      type="text"        
+      placeholder="Introduce la IP">
+      <small>
+        Por ejemplo 14.170.43.80
+      </small>
+    </label>
+    <button id="submit"
+    type="submit">
+      Verificar si la IP es segura
+    </button>
+
+    <div>
+      <pre id="results">
+
+      </pre>
+    </div>
+  </form>
+</main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
