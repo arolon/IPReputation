@@ -33,6 +33,7 @@ $form.addEventListener('submit', async (event) => {
 
   if (ipInfo) {
     $results.innerHTML = `
+      <h1 class="text-center">IP Relevant Information</h1>
       <div class="grid">
         <div>
           <img id="flag" class="flag mx-auto d-block" src="${ipInfo.flag_image}" alt="Country Flag">
@@ -51,7 +52,6 @@ $form.addEventListener('submit', async (event) => {
       <header>Message:</header>
       ${ipInfo.message}
       </article>
-
       <div class='grid'>
         <table>
           <thead>
@@ -114,9 +114,7 @@ $form.addEventListener('submit', async (event) => {
       <details>
         <summary role="button">Full response</summary>
         <p><pre>${JSON.stringify(ipInfo, null, 2)}</pre></p>
-      </details>
-
-      
+      </details>      
     `
   }
 
