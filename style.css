@@ -1,0 +1,10 @@
+.info p {
+  margin-bottom: 0;
+}
+
+#flag {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+}

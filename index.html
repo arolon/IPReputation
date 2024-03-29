@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css" />
     <link type="text/css" rel="stylesheet" href="style.css"/>
+    <title>IP Reputation</title>
   </head>
   <body>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.grey.min.css"
-/>
+    
 
-<main class="container">
-  <form id="form">
-    <label for="">
-      IP del usuario
-      <input 
-      required
-      id="input"
-      type="text"        
-      placeholder="Introduce la IP">
-      <small>
-        Por ejemplo 14.170.43.80
-      </small>
-    </label>
-    <button id="submit"
-    type="submit">
-      Verificar si la IP es segura
-    </button>
+    <main class="container">
+      <form id="form">
+        <label for="">
+          IP del usuario
+          <input 
+          required
+          id="input"
+          type="text"        
+          placeholder="Introduce la IP">
+          <small>
+            Por ejemplo 14.170.43.80
+          </small>
+        </label>
+        <button id="submit"
+        type="submit">
+          Verificar si la IP es segura
+        </button>
 
-    <div>
-      <pre id="results">
-
-      </pre>
-    </div>
-  </form>
-</main>
+        
+        <h1 class="text-center">IP Relevant Information</h1>
+        <div id="results">
+        </div>
+      </form>
+    </main>
     <script type="module" src="script.js"></script>
+    <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+      ({key: "AIzaSyAo7jrHiR-K4TxhvAEf-7dYQGOQ42VYE2g", v: "weekly"});</script>
   </body>
 </html>
