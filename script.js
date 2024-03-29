@@ -44,7 +44,7 @@ $form.addEventListener('submit', async (event) => {
           <p><strong>Organization:</strong> <span id="organization">${ipInfo.organization}</span></p>
           <p><strong>Time Zone:</strong> <span id="timeZone">${ipInfo.time_zone}</span></p>
           <p><strong>Currency:</strong> <span id="currency">${ipInfo.currency}</span></p>
-          <p><strong>Languages:</strong> <span id="languages">${ipInfo.languages[0].name}</span></p>
+          <p><strong>Language:</strong> <span id="languages">${ipInfo.languages[0].name}</span></p>
         </div>
       </div>
       </br>
